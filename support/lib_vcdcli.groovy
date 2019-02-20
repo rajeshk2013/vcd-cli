@@ -40,14 +40,14 @@ def init() {
 def install() {
     // Set up Python virtual environment and install pyvcloud. 
     withEnv(environmentArray) {
-        sh "support/run_in_docker.sh support/install.sh"
+        sh "support/install.sh"
     }
 }
 
 def runToxFlake8() {
     // Run tox. 
     withEnv(environmentArray) {
-        sh "support/run_in_docker.sh support/tox.sh"
+        sh "support/tox.sh"
     }
 }
 
@@ -55,7 +55,7 @@ def runSystemTests() {
     //withCredentials(credentialsArray) {
         // Run the default system test list.
     withEnv(environmentArray) {
-        sh "support/run_in_docker.sh system_tests/run_system_tests.sh"
+        sh "system_tests/run_system_tests.sh"
     }
     //}
 }
