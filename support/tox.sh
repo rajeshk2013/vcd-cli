@@ -23,5 +23,5 @@ if [ -z "$VIRTUAL_ENV" ]; then
     fi
 fi
 
-pip3 install -r test-requirements.txt
+pip install -r test-requirements.txt
 tox -e flake8

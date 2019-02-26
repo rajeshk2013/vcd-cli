@@ -22,5 +22,5 @@ rm -rf $VIRTUAL_ENV_DIR
 python3 -m venv $VIRTUAL_ENV_DIR
 
 . $VIRTUAL_ENV_DIR/bin/activate
-pip3 install -r requirements.txt
-python3 setup.py install
+pip install -r requirements.txt
+python setup.py install
