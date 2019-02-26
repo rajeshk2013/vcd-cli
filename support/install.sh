@@ -16,10 +16,10 @@ cd $SRCROOT
 
 VIRTUAL_ENV_DIR=${VIRTUAL_ENV_DIR:-auto.env}
 
-python3 --version
+python --version
 
 rm -rf $VIRTUAL_ENV_DIR
-python3 -m venv $VIRTUAL_ENV_DIR
+python -m venv $VIRTUAL_ENV_DIR
 
 . $VIRTUAL_ENV_DIR/bin/activate
 pip install -r requirements.txt
